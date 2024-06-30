@@ -26,7 +26,6 @@ for tr in table.find_all('tr')[1:]:
     while len(row) < len(headers):
         row.append('')
     rows.append(row)
-
 # Create a DataFrame from the extracted data
 df = pd.DataFrame(rows, columns=headers)
 
